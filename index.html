@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <h2>Time Calculator</h2>
+        <div class="time-inputs">
+          <div>
+            <input type="number" id="hours1" placeholder="Hours">
+            <input type="number" id="minutes1" placeholder="Minutes">
+            <input type="number" id="seconds1" placeholder="Seconds">
+          </div>
+          <div>
+            <select id="operation">
+                <option value="add">+</option>
+                <option value="subtract">-</option>
+            </select>
+          </div>
+          <div>
+            <input type="number" id="hours2" placeholder="Hours">
+            <input type="number" id="minutes2" placeholder="Minutes">
+            <input type="number" id="seconds2" placeholder="Seconds">
+          </div>
+          <div id="result"></div>
+        </div>
+        <button onclick="calculateTime()">Calculate Time</button>
+        <h2>Date Calculator</h2>
+        <div class="date-inputs">
+          <div>
+            <input type="datetime-local" id="start-date">
+          </div>
+          <div>
+            <select id="date-operation">
+                <option value="add">+</option>
+                <option value="subtract">-</option>
+            </select>
+          </div>
+          <div>
+            <input type="number" id="add-days" placeholder="Days">
+            <input type="number" id="add-hours" placeholder="Hours">
+            <input type="number" id="add-minutes" placeholder="Minutes">
+          </div>
+          <div id="date-result"></div>
+        </div>
+        <button onclick="calculateDate()">Calculate Date</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
